@@ -112,13 +112,13 @@ header{
     font-weight:bold;
     color:#E9A848;
 }
-.contents aside .text h3{
+.contents aside .text h2{
     padding-top:15px;
     padding-bottom:10px;
-    color:#ffffffeb;
+    color:#fff;
     cursor: pointer;
 }
-.contents aside .text h3:hover{
+.contents aside .text h2:hover{
     color:#E9A848;
 }
 .contents aside .text p{
@@ -138,31 +138,31 @@ header{
     background-color:#ffffffb5;
     bottom: -7px;
 }
-.contents aside .textS h3{
+.contents aside .textS h2{
     padding-top:15px;
     padding-bottom:10px;
-    color:#ffffffeb;
+    color:#fff;
     cursor: pointer;
 }
 
-.contents aside .textS h3:hover{
+.contents aside .textS h2:hover{
     color:#E9A848;
 }
 .contents aside .textS p{
     line-height: 1.5;
-    color:#ffffffb5;
+    color:#ffff;
     /* padding-bottom:10px; */
 }
 .contents aside .textT{
     padding-top: 25px;
 }
-.contents aside .textT h3{
+.contents aside .textT h2{
     padding-top:15px;
     padding-bottom:10px;
-    color:#ffffffeb;
+    color:#fff;
     cursor: pointer;
 }
-.contents aside .textT h3:hover{
+.contents aside .textT h2:hover{
     color:#E9A848;
 }
 .contents aside .textT p{
