@@ -1,0 +1,367 @@
+/*  Start Globale Rules */
+*{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style:none;
+}
+.container{
+    padding-right:5px;
+    padding-left:5px;
+    margin-right:auto;
+    margin-left:auto;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+/*  End Globale Rules */
+
+/*  Start Header  */
+header{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo-brand  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+@media(max-width:767px){
+.menu{
+    display: block;
+    font-size: 30px;
+    padding-top: 12px;
+    }
+}
+.navbar nav .links{
+    display: flex;
+    align-items: center;
+}
+@media(max-width:767px){
+    .navbar nav .links{
+        display:none;
+    }
+}
+.navbar nav .links li{
+    padding:20px; 
+    color:#0009;
+    cursor: pointer;      
+}
+.navbar nav .links li.active{
+    color:#DCC0B2;
+}
+.navbar nav .links li:hover{
+    color:#DCC0B2;
+}
+/*  End Header  */
+/*  Start Contetns */
+.contents{
+    display: grid;
+    gap:20px;
+    grid-template-areas:
+    "image image image aside aside"
+    "article  main main aside aside"
+} 
+@media(max-width:767px){
+    .contents{
+        grid-template-areas:
+        "image image image"
+        "article article article"
+        "main main main"
+        "aside aside aside"
+    }
+}
+.contents .slider-img{
+    grid-area: image;
+    /* background-color:blue; */
+}
+.contents aside{
+    grid-area: aside;
+    background-color:black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 21px;
+}
+.contents aside .text{
+    padding-top:20px;
+    padding-bottom:20px;
+    position: relative; 
+}
+.contents aside .text::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ffffffb5;
+    bottom: -10px;
+}
+.contents aside .text h1{
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    font-size:30px;
+    font-weight:bold;
+    color:#E9A848;
+}
+.contents aside .text h3{
+    padding-top:15px;
+    padding-bottom:10px;
+    color:#ffffffeb;
+    cursor: pointer;
+}
+.contents aside .text h3:hover{
+    color:#E9A848;
+}
+.contents aside .text p{
+    line-height: 1.5;
+    color:#ffffffb5;
+}
+.contents aside .textS {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.contents aside .textS::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color:#ffffffb5;
+    bottom: -7px;
+}
+.contents aside .textS h3{
+    padding-top:15px;
+    padding-bottom:10px;
+    color:#ffffffeb;
+    cursor: pointer;
+}
+
+.contents aside .textS h3:hover{
+    color:#E9A848;
+}
+.contents aside .textS p{
+    line-height: 1.5;
+    color:#ffffffb5;
+    /* padding-bottom:10px; */
+}
+.contents aside .textT{
+    padding-top: 25px;
+}
+.contents aside .textT h3{
+    padding-top:15px;
+    padding-bottom:10px;
+    color:#ffffffeb;
+    cursor: pointer;
+}
+.contents aside .textT h3:hover{
+    color:#E9A848;
+}
+.contents aside .textT p{
+    line-height: 1.5;
+    color:#ffffffb5;
+    padding-bottom:10px;
+}
+
+.contents .slider-img img{
+    width:100%;
+}
+
+ .contents main .title{
+    grid-area: article;
+} 
+.contents .title h1{
+    font-size: 50px;
+}
+
+.contents main{
+    grid-area: main;
+} 
+
+.contents main .text p {
+    padding-top: 13px;
+    padding-bottom: 10px;
+    color: #000000ba;
+    line-height: 1.4;
+
+}
+.contents main .btns{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.contents main .btns button{
+    border:none;
+    padding-right:15px;
+    padding-left:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:#fff;
+    background-color:#F15E50;
+    text-transform:uppercase;
+    font-size:bold;
+}
+.contents main .btns button:hover{
+    background-color:#00001A;
+    transition: all .4s;
+}
+/*  Start Boxes */
+.boxes{
+    padding-top:20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    /* gap:41px;
+    grid-template-areas: 
+    "laptop computer computer games" */
+}
+.boxes .retro-pcs{
+    /* grid-area: laptop; */
+    display: flex;
+    justify-items: center;
+    justify-content:space-around;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+@media(max-width:767px){
+    .boxes .retro-pcs{
+        justify-content: space-evenly !important;
+     }
+}
+.boxes .retro-pcs  img{
+    width:90px;
+    height:150px;
+}
+
+.boxes .retro-pcs .laptops span{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #0009;
+}
+.boxes .retro-pcs .laptops h2 {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+.boxes .retro-pcs .laptops p{
+    line-height: 1.6;
+    color: #0009;
+    padding-bottom: 10px;
+    padding-top: 11px;
+    font-size:14px;
+}
+.boxes .computer{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+@media(max-width:767px){
+    .boxes .computer{
+        justify-content: space-evenly !important;
+     }
+}
+.boxes .computer img{
+    width:90px;
+    height:150px;
+}
+.boxes .computer .laptop span{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #0009;
+}
+.boxes .computer .laptop h2{
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+
+.boxes .computer .laptop p{
+    line-height: 1.6;
+    color: #0009;
+    padding-bottom: 10px;
+    padding-top: 11px;
+    font-size:14px;
+}
+.boxes .games{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+@media(max-width:767px){
+    .boxes .games{
+        justify-content: space-evenly !important;
+     }
+}
+@media(max-width:767px){
+    .boxes .games{
+        padding-left:10px !important;
+    }
+    .boxes .games .game span{
+        padding-left:20px;
+    }
+}
+.boxes .games img{
+    width:90px;
+    height:150px;
+}
+.boxes .games .game {
+    padding-left:20px;
+}
+.boxes .games .game span {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #0009;
+}
+.boxes .games .game h2 {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 6px;
+}
+.boxes .games .game p{
+    line-height: 1.6;
+    color: #0009;
+    padding-bottom: 10px;
+    padding-top: 11px;
+    font-size:14px;
+}
+
+/*  End Boxes */
+
+/*  Start Queries */
+@media(min-width:768px){
+    .container{
+        max-width:720px;
+    }
+}
+
+@media(min-width:992px){
+    .container{
+        max-width:960px;
+    }
+}
+
+@media(min-width:1440px){
+    .container{
+        max-width:1400px;
+    }
+}
